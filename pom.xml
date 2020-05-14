@@ -18,6 +18,10 @@
         <module>yigou-transaction-fescar</module>
         <module>yigou-web</module>
         <module>yigou-eureka</module>
+        <module>yigou-common</module>
+        <module>yigou-common-db</module>
+        <module>yigou-service-goods-api</module>
+        <module>yigou-service-goods</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

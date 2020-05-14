@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yigou-common/yigou-common.iml" filepath="$PROJECT_DIR$/yigou-common/yigou-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-common-db/yigou-common-db.iml" filepath="$PROJECT_DIR$/yigou-common-db/yigou-common-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-eureka/yigou-eureka.iml" filepath="$PROJECT_DIR$/yigou-eureka/yigou-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-gateway/yigou-gateway.iml" filepath="$PROJECT_DIR$/yigou-gateway/yigou-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-parent.iml" filepath="$PROJECT_DIR$/yigou-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service-goods/yigou-service-goods.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service-goods/yigou-service-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-goods-api/yigou-service-goods-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-goods-api/yigou-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" filepath="$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-web/yigou-web.iml" filepath="$PROJECT_DIR$/yigou-web/yigou-web.iml" />
+    </modules>
+  </component>
+</project>

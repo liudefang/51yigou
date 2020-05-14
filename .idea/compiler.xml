@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yigou-service-goods" />
+        <module name="yigou-common-db" />
+        <module name="yigou-eureka" />
+        <module name="yigou-common" />
+        <module name="yigou-service-goods-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="yigou-common" target="1.8" />
+      <module name="yigou-common-db" target="1.8" />
+      <module name="yigou-eureka" target="1.8" />
+      <module name="yigou-gateway" target="1.8" />
+      <module name="yigou-parent" target="1.8" />
+      <module name="yigou-service" target="1.8" />
+      <module name="yigou-service-api" target="1.8" />
+      <module name="yigou-service-goods" target="1.8" />
+      <module name="yigou-service-goods-api" target="1.8" />
+      <module name="yigou-transaction-fescar" target="1.8" />
+      <module name="yigou-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yigou-common" options="-parameters" />
+      <module name="yigou-common-db" options="-parameters" />
+      <module name="yigou-eureka" options="-parameters" />
+      <module name="yigou-service-goods" options="-parameters" />
+      <module name="yigou-service-goods-api" options="-parameters" />
+    </option>
+  </component>
+</project>

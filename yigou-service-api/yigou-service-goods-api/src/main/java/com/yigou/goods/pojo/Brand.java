@@ -10,6 +10,8 @@ import java.io.Serializable;
  * @Description:Brand构建
  *****/
 @ApiModel(description = "Brand",value = "Brand")
+//@Table用于配置表与实体类的映射关系
+//@ld用于标识主键属性
 @Table(name="tb_brand")
 public class Brand implements Serializable{
 

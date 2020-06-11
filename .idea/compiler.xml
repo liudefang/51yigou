@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yigou-service-goods" />
+        <module name="model" />
         <module name="yigou-common-db" />
         <module name="yigou-eureka" />
-        <module name="yigou-common" />
+        <module name="yigou-service-goods" />
         <module name="yigou-service-goods-api" />
+        <module name="yigou-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="model" target="1.5" />
+      <module name="redis-goods" target="1.5" />
       <module name="yigou-common" target="1.8" />
       <module name="yigou-common-db" target="1.8" />
       <module name="yigou-eureka" target="1.8" />

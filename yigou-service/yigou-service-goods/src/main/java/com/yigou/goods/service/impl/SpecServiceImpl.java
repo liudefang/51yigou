@@ -6,6 +6,7 @@ import com.github.pagehelper.PageInfo;
 import com.yigou.goods.dao.SpecMapper;
 import com.yigou.goods.dao.TemplateMapper;
 import com.yigou.goods.pojo.Spec;
+import com.yigou.goods.pojo.Template;
 import com.yigou.goods.service.SpecService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -74,30 +75,7 @@ public class SpecServiceImpl implements SpecService {
         return specMapper.selectByExample(example);
     }
 
-    @Override
-    public void delete(Integer id) {
 
-    }
-
-    @Override
-    public void update(Spec spec) {
-
-    }
-
-    @Override
-    public void add(Spec spec) {
-
-    }
-
-    @Override
-    public Spec findById(Integer id) {
-        return null;
-    }
-
-    @Override
-    public List<Spec> findAll() {
-        return null;
-    }
 
     /**
      * Spec构建查询对象
@@ -133,4 +111,69 @@ public class SpecServiceImpl implements SpecService {
         return example;
 
     }
+    /**
+     * 删除
+     * @param id
+     */
+    @Override
+    public void delete(Integer id){
+        //查询模板
+        Spec spec = specMapper.selectByPrimaryKey(id);
+        //变更模板数量
+        updateSpecNum(spec,-1);
+
+        //删除指定规格
+        specMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 修改Spec
+     * @param spec
+     */
+    @Override
+    public void update(Spec spec){
+        specMapper.updateByPrimaryKey(spec);
+    }
+    /**
+     * 增加Spec
+     * @param spec
+     */
+    @Override
+    public void add(Spec spec){
+        specMapper.insert(spec);
+        // 变更模板数量
+        updateSpecNum(spec,1);
+    }
+
+    /**
+     * 根据ID查询Spec
+     * @param id
+     * @return
+     */
+    @Override
+    public Spec findById(Integer id){
+        return specMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 查询Spec全部数据
+     * @return
+     */
+    @Override
+    public List<Spec> findAll(){
+        return specMapper.selectAll();
+    }
+
+    /**
+     * 修改模板统计数据
+     * @param spec:操作的模板
+     * @param count:变更的数量
+     */
+    public void updateSpecNum(Spec spec, int count){
+        //修改模板数量统计
+        Template template = templateMapper.selectByPrimaryKey(spec.getTemplateId());
+        template.setSpecNum(template.getSpecNum()+count);
+        templateMapper.updateByPrimaryKeySelective(template);
+    }
+
 }

@@ -61,5 +61,12 @@ public interface SpecService {
      */
     List<Spec> findAll();
 
+    /***
+     * 根据分类ID查询规格列表
+     * @param categoryid
+     * @return
+     */
+    List<Spec> findByCategoryId(Integer categoryid);
+
 
 }

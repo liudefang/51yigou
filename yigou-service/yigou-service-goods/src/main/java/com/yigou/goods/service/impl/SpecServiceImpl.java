@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yigou.goods.dao.SpecMapper;
 import com.yigou.goods.dao.TemplateMapper;
+import com.yigou.goods.pojo.Category;
 import com.yigou.goods.pojo.Spec;
 import com.yigou.goods.pojo.Template;
 import com.yigou.goods.service.SpecService;
@@ -164,6 +165,18 @@ public class SpecServiceImpl implements SpecService {
         return specMapper.selectAll();
     }
 
+    /***
+     * 根据分类ID查询规格列表
+     * @param categoryid
+     * @return
+     */
+    @Override
+    public List<Spec> findByCategoryId(Integer categoryid) {
+        // 查询分类
+        Category category = categoryMapper.sel
+        return null;
+    }
+
     /**
      * 修改模板统计数据
      * @param spec:操作的模板
@@ -175,5 +188,8 @@ public class SpecServiceImpl implements SpecService {
         template.setSpecNum(template.getSpecNum()+count);
         templateMapper.updateByPrimaryKeySelective(template);
     }
+
+
+
 
 }

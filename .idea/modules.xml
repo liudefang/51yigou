@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../code-template/code-template.iml" filepath="$PROJECT_DIR$/../code-template/code-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/../redis-goods/model/model.iml" filepath="$PROJECT_DIR$/../redis-goods/model/model.iml" />
       <module fileurl="file://$PROJECT_DIR$/../redis-goods/redis-goods.iml" filepath="$PROJECT_DIR$/../redis-goods/redis-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-common/yigou-common.iml" filepath="$PROJECT_DIR$/yigou-common/yigou-common.iml" />

@@ -3,6 +3,7 @@ package com.yigou.goods.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.yigou.goods.dao.CategoryMapper;
 import com.yigou.goods.dao.SpecMapper;
 import com.yigou.goods.dao.TemplateMapper;
 import com.yigou.goods.pojo.Category;
@@ -29,6 +30,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * Spec条件+分页查询
@@ -173,8 +177,11 @@ public class SpecServiceImpl implements SpecService {
     @Override
     public List<Spec> findByCategoryId(Integer categoryid) {
         // 查询分类
-        Category category = categoryMapper.sel
-        return null;
+        Category category = categoryMapper.selectByPrimaryKey(categoryid);
+        //根据分类的模板ID查询规格
+        Spec spec = new Spec();
+        spec.setTemplateId(category.getTemplateId());
+        return specMapper.select(spec);
     }
 
     /**

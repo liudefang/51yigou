@@ -2,8 +2,10 @@ package com.yigou.goods.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.yigou.goods.dao.CategoryMapper;
 import com.yigou.goods.dao.ParaMapper;
 import com.yigou.goods.dao.TemplateMapper;
+import com.yigou.goods.pojo.Category;
 import com.yigou.goods.pojo.Para;
 import com.yigou.goods.pojo.Template;
 import com.yigou.goods.service.ParaService;
@@ -25,6 +27,9 @@ public class ParaServiceImpl implements ParaService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * Para条件+分页查询
@@ -157,6 +162,21 @@ public class ParaServiceImpl implements ParaService {
     @Override
     public List<Para> findAll() {
         return paraMapper.selectAll();
+    }
+
+    /***
+     * 根据分类ID查询参数列表
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Para> findByCategoryId(Integer id) {
+        // 查询分类信息
+        Category category = categoryMapper.selectByPrimaryKey(id);
+        //根据分类的模板ID查询参数列表
+        Para para = new Para();
+        para.setTemplateId(category.getTemplateId());
+        return paraMapper.select(para);
     }
 
     /**

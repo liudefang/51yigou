@@ -157,13 +157,39 @@ public class SpuServiceImpl implements SpuService {
         return goods;
     }
 
+    /***
+     * 商品审核
+     * @param spuId
+     */
     @Override
-    public void auditSpu(Long id) {
+    public void auditSpu(Long spuId) {
+        //查询商品
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+        //判断商品是否已经删除
+        if(spu.getIsDelete().equalsIgnoreCase("1")){
+            throw new RuntimeException("该商品已经删除!");
+        }
+        //实现上架和审核
+        spu.setStatus("1");     //审核通过
+        spu.setIsMarketable("1");   //上架
+        spuMapper.updateByPrimaryKeySelective(spu);
+        
 
     }
 
+    /***
+     * 商品下架
+     * @param spuId
+     */
+
     @Override
-    public void pullSpu(Long id) {
+    public void pullSpu(Long spuId) {
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+        if(spu.getIsDelete().equals("1")){
+            throw new RuntimeException("此商品已经删除!");
+        }
+        spu.setIsMarketable("0");   //下架状态
+        spuMapper.updateByPrimaryKeySelective(spu);
 
     }
 

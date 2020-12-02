@@ -5,10 +5,7 @@ import com.yigou.goods.service.SpuService;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Time    : 2020/11/17 5:03 下午
@@ -40,4 +37,25 @@ public class SpuController {
         Goods goods = spuService.findGoodsById(id);
         return new Result<Goods>(true,StatusCode.OK,"查询成功",goods);
     }
+
+    /***
+     * 审核
+     * @return
+     */
+    @PutMapping("/audit/{id}")
+    public Result audit(@PathVariable Long id){
+        spuService.auditSpu(id);
+        return new Result(true,StatusCode.OK,"审核成功!");
+    }
+    /***
+     * 下架
+     * @param spuId
+     * @return
+     */
+    @PutMapping("/pull/{spuId}")
+    public Result pull(@PathVariable Long spuId){
+        spuService.pullSpu(spuId);
+        return new Result(true,StatusCode.OK,"下架成功!");
+    }
+
 }

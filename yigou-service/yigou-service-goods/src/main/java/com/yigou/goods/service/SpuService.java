@@ -73,16 +73,20 @@ public interface SpuService {
 
     Goods findGoodsById(Long spuId);
 
-    void auditSpu(Long id);
+    /***
+     * 商品审核
+     * @param spuId
+     */
+    void auditSpu(Long spuId);
 
     /**
      * 下架
-     * @param id
+     * @param spuId
      */
-    void pullSpu(Long id);
+    void pullSpu(Long spuId);
 
-    void logicDeleteSpu(Long id);
+    void logicDeleteSpu(Long spuId);
 
 
-    void restoreSpu(Long id);
+    void restoreSpu(Long spuId);
 }

@@ -193,6 +193,24 @@ public class SpuServiceImpl implements SpuService {
 
     }
 
+    /**
+     * 商品上架
+     * @param spuId
+     */
+    @Override
+    public void putSpu(Long spuId){
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+        //检查是否删除的商品
+        if(spu.getIsDelete().equals("1")){
+            throw new RuntimeException("此商品已删除!");
+        }
+        if(!spu.getStatus().equals("1")){
+            throw new RuntimeException("未通过审核的商品不能上架!")
+        }
+        //上架状态
+        spu.setIsMarketable("1");
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
     @Override
     public void logicDeleteSpu(Long id) {
 

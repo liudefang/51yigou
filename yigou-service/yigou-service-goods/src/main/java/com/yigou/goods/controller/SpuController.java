@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
  * Author  : mike.liu
  * File    : SpuController.java
  */
+@RestController
+@RequestMapping("/spu")
+@CrossOrigin
 public class SpuController {
     /***
      * 添加Goods
@@ -56,6 +59,17 @@ public class SpuController {
     public Result pull(@PathVariable Long spuId){
         spuService.pullSpu(spuId);
         return new Result(true,StatusCode.OK,"下架成功!");
+    }
+
+    /**
+     * 商品上架
+     * @param  id
+     * @return
+     */
+    @PutMapping("/put/{id}")
+    public Result put(@PathVariable Long id){
+        spuService.putSpu(id);
+        return new Result(true, StatusCode.OK, "上架商品成功!");
     }
 
 }

@@ -101,7 +101,6 @@ public class SpuController {
      * @param goods
      * @return
      */
-    @Autowired SpuService spuService;
 
     @PostMapping("/save")
     public Result save(@RequestBody Goods goods){

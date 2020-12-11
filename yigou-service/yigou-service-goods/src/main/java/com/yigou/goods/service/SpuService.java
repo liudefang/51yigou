@@ -91,8 +91,22 @@ public interface SpuService {
      */
     void putSpu(Long spuId);
 
+    /**
+     * 批量上架
+     * @param spuIds
+     */
+    int putMany(Long[] spuIds);
+
+    /**
+     * 逻辑删除
+     * @param spuId
+     */
     void logicDeleteSpu(Long spuId);
 
+    /**
+     * 恢复数据
+     * @param spuId
+     */
 
     void restoreSpu(Long spuId);
 }

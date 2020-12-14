@@ -7,6 +7,8 @@ import com.yigou.goods.service.SpuService;
 import entity.Page;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +19,7 @@ import java.util.List;
  * Author  : mike.liu
  * File    : SpuController.java
  */
+@Api(tags = "品牌管理",description = "品牌管理")
 @RestController
 @RequestMapping("/spu")
 @CrossOrigin
@@ -30,7 +33,9 @@ public class SpuController {
      * @param size
      * @return
      */
+    @ApiOperation("商品管理")
     @PostMapping(value = "/search/{page}/{size}")
+
     public Result<PageInfo> findPage(@RequestBody(required = false) Spu spu, @PathVariable int page, @PathVariable int size){
         //调用SpuService实现条件查询Spu
         PageInfo<Spu> pageInfo = spuService.findPage(spu, page, size);

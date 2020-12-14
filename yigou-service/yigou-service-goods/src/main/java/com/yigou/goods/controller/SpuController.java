@@ -10,6 +10,7 @@ import entity.StatusCode;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,8 +20,9 @@ import java.util.List;
  * Author  : mike.liu
  * File    : SpuController.java
  */
-@Api(tags = "品牌管理",description = "品牌管理")
-@RestController
+@Controller
+@Api(tags = "SpuController",description = "品牌管理")
+
 @RequestMapping("/spu")
 @CrossOrigin
 public class SpuController {
@@ -34,7 +36,7 @@ public class SpuController {
      * @return
      */
     @ApiOperation("商品管理")
-    @PostMapping(value = "/search/{page}/{size}")
+    @RequestMapping(value = "/search/{page}/{size}", method = RequestMethod.POST)
 
     public Result<PageInfo> findPage(@RequestBody(required = false) Spu spu, @PathVariable int page, @PathVariable int size){
         //调用SpuService实现条件查询Spu

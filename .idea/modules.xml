@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service-goods/yigou-service-goods.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service-goods/yigou-service-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-goods-api/yigou-service-goods-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-goods-api/yigou-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service-search/yigou-service-search.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service-search/yigou-service-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-search-api/yigou-service-search-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-search-api/yigou-service-search-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" filepath="$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-web/yigou-web.iml" filepath="$PROJECT_DIR$/yigou-web/yigou-web.iml" />
     </modules>

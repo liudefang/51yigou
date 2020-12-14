@@ -9,6 +9,7 @@ import com.yigou.goods.pojo.Category;
 import com.yigou.goods.pojo.Para;
 import com.yigou.goods.pojo.Template;
 import com.yigou.goods.service.ParaService;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.entity.Example;
@@ -20,6 +21,7 @@ import java.util.List;
  * Author  : mike.liu
  * File    : ParaServiceImpl.java
  */
+@Service
 public class ParaServiceImpl implements ParaService {
 
     @Autowired

@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>yigou-service-goods</module>
+        <module>yigou-service-search</module>
     </modules>
 
     <artifactId>yigou-service</artifactId>

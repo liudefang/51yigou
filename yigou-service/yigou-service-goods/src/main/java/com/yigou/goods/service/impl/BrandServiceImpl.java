@@ -5,10 +5,9 @@ import com.github.pagehelper.PageInfo;
 import com.yigou.goods.dao.BrandMapper;
 import com.yigou.goods.pojo.Brand;
 import com.yigou.goods.service.BrandService;
-import io.netty.util.internal.StringUtil;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;

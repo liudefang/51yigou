@@ -7,11 +7,12 @@ import com.yigou.goods.pojo.Category;
 import com.yigou.goods.service.CategoryService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
-
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired

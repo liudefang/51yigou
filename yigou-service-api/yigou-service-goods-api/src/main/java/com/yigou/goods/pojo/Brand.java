@@ -71,7 +71,7 @@ public class Brand implements Serializable{
 		this.letter = letter;
 	}
 	//get方法
-	public String getSeq() {
+	public Integer getSeq() {
 		return seq;
 	}
 

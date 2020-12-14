@@ -1,16 +1,20 @@
-package com.yigou.goods;
+package com.yigou;
 
 
+import entity.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
 import tk.mybatis.spring.annotation.MapperScan;
+
 
 /**
  * 描述
  *
  * @version 1.0
- * @package com.changgou *
+ * @package com.yigou *
  * @since 1.0
  */
 @SpringBootApplication
@@ -32,4 +36,7 @@ public class GoodsApplication {
     public static void main(String[] args) {
         SpringApplication.run(GoodsApplication.class, args);
     }
+    @Bean
+    public IdWorker idWorker(){
+        return new IdWorker(0,1) ;}
 }

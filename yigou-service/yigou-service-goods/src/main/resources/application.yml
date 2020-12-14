@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://112.74.186.7:3306/yigou_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: 123456
+    password: per@test
 eureka:
   client:
     service-url:
@@ -17,8 +17,8 @@ eureka:
 feign:
   hystrix:
     enabled: true
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-  mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.yigou.goods.pojo
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.yigou.goods.pojo

@@ -19,6 +19,7 @@ import java.util.List;
 @RequestMapping("/category")
 @CrossOrigin
 public class CategoryController {
+
     @Autowired
     private CategoryService categoryService;
 

@@ -21,7 +21,7 @@ import java.util.List;
  * File    : SpuController.java
  */
 @Controller
-@Api(tags = "SpuController",description = "品牌管理")
+@Api(tags = "SpuController",description = "商品管理")
 
 @RequestMapping("/spu")
 @CrossOrigin
@@ -35,8 +35,7 @@ public class SpuController {
      * @param size
      * @return
      */
-    @ApiOperation("商品管理")
-    @RequestMapping(value = "/search/{page}/{size}", method = RequestMethod.POST)
+    @PostMapping(value = "/search/{page}/{size}")
 
     public Result<PageInfo> findPage(@RequestBody(required = false) Spu spu, @PathVariable int page, @PathVariable int size){
         //调用SpuService实现条件查询Spu

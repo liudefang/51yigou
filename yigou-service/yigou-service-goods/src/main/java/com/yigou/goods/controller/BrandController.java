@@ -5,13 +5,17 @@ import com.yigou.goods.pojo.Brand;
 import com.yigou.goods.service.BrandService;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageImpl;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@Api(tags = "BrandController 品牌管理")
 @RequestMapping("/brand")
 @CrossOrigin
 public class BrandController {
@@ -26,6 +30,7 @@ public class BrandController {
      * @return
      */
     @GetMapping
+    @ApiOperation(value = "搜索全部数据")
     public Result<List<Brand>> findAll(){
         List<Brand> brandList = brandService.findAll();
         return new Result<List<Brand>>(true, StatusCode.OK,"查询成功", brandList);

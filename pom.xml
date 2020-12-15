@@ -32,6 +32,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <skipTests>true</skipTests>
+        <swagger-version>2.8.0</swagger-version>
     </properties>
 
     <!--依赖包-->
@@ -53,14 +54,19 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
+            <version>${swagger-version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.6.1</version>
+            <version>${swagger-version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <!--http://localhost:18081/doc.html-->
 <!--        <dependency>-->
 <!--            <groupId>com.github.xiaoymin</groupId>-->
 <!--            <artifactId>swagger-bootstrap-ui</artifactId>-->

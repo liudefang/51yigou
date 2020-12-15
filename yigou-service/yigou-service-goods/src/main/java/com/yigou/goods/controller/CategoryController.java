@@ -5,7 +5,9 @@ import com.yigou.goods.pojo.Category;
 import com.yigou.goods.service.CategoryService;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +17,8 @@ import java.util.List;
  * Author  : mike.liu
  * File    : CategoryController.java
  */
-@RestController
+@Controller
+@Api(tags = "CategoryController",description = "分类管理")
 @RequestMapping("/category")
 @CrossOrigin
 public class CategoryController {

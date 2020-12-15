@@ -5,8 +5,10 @@ import com.yigou.goods.pojo.Spec;
 import com.yigou.goods.service.SpecService;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageImpl;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,7 +18,8 @@ import java.util.List;
  * Author  : mike.liu
  * File    : SpecController.java
  */
-@RestController
+@Controller
+@Api(tags = "SpecController",description = "商品属性")
 @RequestMapping("/spec")
 @CrossOrigin
 public class SpecController {

@@ -5,8 +5,10 @@ import com.yigou.goods.pojo.Template;
 import com.yigou.goods.service.TemplateService;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
 import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,8 +18,8 @@ import java.util.List;
  * Author  : mike.liu
  * File    : TemplateController.java
  */
-
-@RestController
+@Controller
+@Api(tags = "TemplateController",description = "规格参数")
 @RequestMapping("/template")
 @CrossOrigin
 public class TemplateController {

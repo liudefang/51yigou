@@ -5,7 +5,9 @@ import com.yigou.goods.pojo.Para;
 import com.yigou.goods.service.ParaService;
 import entity.Result;
 import entity.StatusCode;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +17,8 @@ import java.util.List;
  * Author  : mike.liu
  * File    : ParaController.java
  */
-@RestController
+@Controller
+@Api(tags = "ParaController",description = "商品参数")
 @RequestMapping("/para")
 @CrossOrigin
 public class ParaController {

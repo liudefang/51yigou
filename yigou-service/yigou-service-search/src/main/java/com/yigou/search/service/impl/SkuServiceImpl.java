@@ -96,5 +96,6 @@ public class SkuServiceImpl implements SkuService {
                 categoryList.add(keyAsString);
             }
         }
-        return categoryList
+        return categoryList;
+    }
 }

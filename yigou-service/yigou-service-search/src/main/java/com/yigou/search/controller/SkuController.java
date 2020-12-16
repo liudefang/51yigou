@@ -14,9 +14,9 @@ import entity.StatusCode;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @Api(tags = "SkuController 品牌管理")
@@ -34,5 +34,15 @@ public class SkuController {
     public Result search(){
         skuService.importSku();
         return new Result(true, StatusCode.OK,"导入数据到索引库中成功！");
+    }
+    /**
+     * 搜索
+     * @param searchMap
+     * @return
+     */
+    @PostMapping
+    @ApiOperation(value = "搜索分类")
+    public Map search(@RequestBody(required = false) Map searchMap){
+        return  skuService.search(searchMap);
     }
 }

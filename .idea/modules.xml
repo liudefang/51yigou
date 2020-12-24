@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/yigou-common-db/yigou-common-db.iml" filepath="$PROJECT_DIR$/yigou-common-db/yigou-common-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-eureka/yigou-eureka.iml" filepath="$PROJECT_DIR$/yigou-eureka/yigou-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-gateway/yigou-gateway.iml" filepath="$PROJECT_DIR$/yigou-gateway/yigou-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-gateway/yigou-gateway-web/yigou-gateway-web.iml" filepath="$PROJECT_DIR$/yigou-gateway/yigou-gateway-web/yigou-gateway-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-parent.iml" filepath="$PROJECT_DIR$/yigou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-api.iml" />

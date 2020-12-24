@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="yigou-gateway-web" />
         <module name="yigou-service-search" />
         <module name="code-template" />
         <module name="model" />
-        <module name="yigou-service-goods" />
         <module name="yigou-common-db" />
         <module name="yigou-eureka" />
         <module name="yigou-service-search-api" />
-        <module name="yigou-common" />
+        <module name="yigou-service-goods" />
         <module name="yigou-service-goods-api" />
+        <module name="yigou-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="yigou-common-db" target="1.8" />
       <module name="yigou-eureka" target="1.8" />
       <module name="yigou-gateway" target="1.8" />
+      <module name="yigou-gateway-web" target="1.8" />
       <module name="yigou-parent" target="1.8" />
       <module name="yigou-service" target="1.8" />
       <module name="yigou-service-api" target="1.8" />
@@ -41,6 +43,7 @@
       <module name="yigou-common" options="-parameters" />
       <module name="yigou-common-db" options="-parameters" />
       <module name="yigou-eureka" options="-parameters" />
+      <module name="yigou-gateway-web" options="-parameters" />
       <module name="yigou-service-goods" options="-parameters" />
       <module name="yigou-service-goods-api" options="-parameters" />
       <module name="yigou-service-search" options="-parameters" />

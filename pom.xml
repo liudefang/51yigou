@@ -20,6 +20,7 @@
         <module>yigou-eureka</module>
         <module>yigou-common</module>
         <module>yigou-common-db</module>
+        <module>yigou-gateway/yigou-gateway-web</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

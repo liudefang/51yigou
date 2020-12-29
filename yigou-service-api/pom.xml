@@ -12,6 +12,7 @@
     <modules>
         <module>yigou-service-goods-api</module>
         <module>yigou-service-search-api</module>
+        <module>yigou-service-user-api</module>
     </modules>
 
     <artifactId>yigou-service-api</artifactId>

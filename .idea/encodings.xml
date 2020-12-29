@@ -7,9 +7,11 @@
     <file url="file://$PROJECT_DIR$/yigou-gateway/yigou-gateway-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yigou-service-api/yigou-service-goods-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yigou-service-api/yigou-service-search-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yigou-service-api/yigou-service-user-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yigou-service/yigou-service-goods/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yigou-service/yigou-service-goods/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yigou-service/yigou-service-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yigou-service/yigou-service-user/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

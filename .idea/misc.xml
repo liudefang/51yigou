@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../redis-goods/pom.xml" />
         <option value="$PROJECT_DIR$/../code-template/pom.xml" />
+        <option value="$PROJECT_DIR$/yigou-service/yigou-service-user/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

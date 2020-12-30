@@ -13,6 +13,7 @@
         <module>yigou-service-goods</module>
         <module>yigou-service-search</module>
         <module>yigou-service-user</module>
+
     </modules>
     <artifactId>yigou-service</artifactId>
     <!--依赖-->

@@ -7,17 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="yigou-service-user-api" />
-        <module name="yigou-service-search" />
-        <module name="yigou-gateway-web" />
-        <module name="code-template" />
-        <module name="model" />
-        <module name="yigou-service-goods" />
-        <module name="yigou-common-db" />
-        <module name="yigou-eureka" />
-        <module name="yigou-service-search-api" />
         <module name="yigou-common" />
-        <module name="yigou-service-user" />
+        <module name="yigou-eureka" />
+        <module name="code-template" />
+        <module name="yigou-common-db" />
         <module name="yigou-service-goods-api" />
+        <module name="model" />
+        <module name="yigou-service-search-api" />
+        <module name="yigou-gateway-web" />
+        <module name="yigou-service-goods" />
+        <module name="yigou-service-user" />
+        <module name="yigou-service-search" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

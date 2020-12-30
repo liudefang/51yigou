@@ -1,4 +1,4 @@
-package yigou.user.pojo;
+package com.yigou.user.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Id;

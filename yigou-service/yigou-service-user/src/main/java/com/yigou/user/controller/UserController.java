@@ -134,6 +134,14 @@ public class UserController {
         return new Result<List<User>>(true, StatusCode.OK, "查询成功", list);
     }
 
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @param response
+     * @param request
+     * @return
+     */
     @RequestMapping("/login")
     public Result<User> login(String username, String password, HttpServletResponse response, HttpServletRequest request) {
         //1.从数据库中查询用户名对应的用户的对象

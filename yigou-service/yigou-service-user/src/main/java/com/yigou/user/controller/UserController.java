@@ -146,12 +146,11 @@ public class UserController {
     public Result<User> login(String username, String password, HttpServletResponse response, HttpServletRequest request) {
         //1.从数据库中查询用户名对应的用户的对象
         User user = userService.findById(username);
-        if (user == null && BCrypt.checkpw(password,user.getPassword())) {
-            return new Result<>(true,StatusCode.OK,"登录成功!", user);
-            //2.判断用户是否为空 为空返回数据
-
+        if(user == null){
+            //2.判断用户是否为空，为空返回数据
+            return new Result<User>(false, StatusCode.LOGINERROR, "用户名或密码错误");
         }
-        return new Result<User>(false, StatusCode.LOGINERROR, "用户名或密码错误");
+
 
         //3如果不为空格 判断 密码是否正确 正确则登录成功
 

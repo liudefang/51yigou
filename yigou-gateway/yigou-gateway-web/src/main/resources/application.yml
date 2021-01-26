@@ -14,7 +14,7 @@ spring:
         - id: changgou_goods_route
           uri: lb://goods
           predicates:
-            - Path=/api/goods/**
+            - Path=/api/album/**,/api/brand/**,/api/cache/**,/api/categoryBrand/**,/api/category/**,/api/para/**,/api/pref/**,/api/sku/**,/api/spec/**,/api/spu/**,/api/stockBack/**,/api/template/**
           filters:
             - StripPrefix=1
             - name: RequestRateLimiter #请求数限流 名字不能随便写 ，使用默认的facatory

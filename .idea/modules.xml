@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/yigou-service/yigou-service-user/yigou-service-user.iml" filepath="$PROJECT_DIR$/yigou-service/yigou-service-user/yigou-service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-service-api/yigou-service-user-api/yigou-service-user-api.iml" filepath="$PROJECT_DIR$/yigou-service-api/yigou-service-user-api/yigou-service-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" filepath="$PROJECT_DIR$/yigou-transaction-fescar/yigou-transaction-fescar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yigou-user-oauth/yigou-user-oauth.iml" filepath="$PROJECT_DIR$/yigou-user-oauth/yigou-user-oauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/yigou-web/yigou-web.iml" filepath="$PROJECT_DIR$/yigou-web/yigou-web.iml" />
     </modules>
   </component>
